@@ -1,0 +1,117 @@
+
+.courses-container .categories {
+    margin-bottom: 20px;
+}
+.courses-container .categoryBtn{
+    min-width: 97px;
+    height: 39px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ccc;
+    border-radius: 2px;
+    border: 0;
+}
+.courses-container .selected {
+    pointer-events: none;
+    background-color: #e33935;
+}
+.courses-container .course-outer {
+    display: flex;
+    padding: 16px 0;
+}
+.courses-container .thumbnail img {
+    width: 256px;
+    max-width: 256px;
+}
+.courses-container .course-outer .desc {
+    margin-right: 33px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.courses-container .course-outer .title{
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+.courses-container .course-outer .cat-name{
+    padding: 4px 8px;
+    color: #323232;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    margin: 20px 0 30px 0;
+    align-self: flex-start;
+}
+
+.courses-container .startBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    height: 39px;
+    margin-left: auto;
+    padding: 9px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #47a92a;
+    background: #fff;
+    border: 2px solid #47a92a;
+    gap: 7px;
+}
+.courses-container .startBtn a {
+    color: #47a92a;
+}
+.courses-container .startBtn svg {
+    width: 20px;
+}
+
+.single-course-container {
+    padding: 40px 20px;
+}
+
+.single-course-container .title {
+    margin-bottom: 70px;
+    color: #000;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: normal;
+}
+
+/* Loading */
+.courses-container .loading-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+}
+.courses-container .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.courses-container .spinner-container .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #e33935;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
